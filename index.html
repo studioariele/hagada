@@ -28,6 +28,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
+
 <body>
 	<div class="main">
 		<div class="row">
@@ -36,9 +37,16 @@
 			</div>
 			<div class="col-md-6">
 				<img src="img/text.png" alt="טקסט הגדה">
-				<input type="button" class="order-button">	
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="JZ5456MF3R4FG">
+					<input type="image" src="img/order-now.png" border="0" name="submit" alt="PayPal - הדרך הקלה והבטוחה לשלם באינטרנט!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/he_IL/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
 			</div>
 		</div>
 	</div>
 </body>
+
 </html>
